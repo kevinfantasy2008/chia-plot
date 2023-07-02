@@ -1,0 +1,8 @@
+@echo off
+
+for /l %%i in (1,1,260) do (
+  bladebit_cuda.exe -n 1 -z 5 -f farmerkey -c poolkey cudaplot T:
+  echo plot %%i
+)
+
+pause
